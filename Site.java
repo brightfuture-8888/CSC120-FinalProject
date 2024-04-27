@@ -1,26 +1,37 @@
 import java.util.Scanner;
 
 public class Site {
-    // String name;
-    // String question;
     String response;
     boolean checkAnswer;
 
-    int answerYNorth;
-    int answerYSouth;
+    int answerYNorth; // Yamanashi North
+    int answerYSouth; // Yamanash South
+
+    int answerNaNorth; // Nara North
+    int answerNaSouth; // Nara South
+
+    int answerSNorth; // Saitama North
+    int answerSSouth; // Saitama South
+
+    int answerKNorth; // Kyoto North
+    int answerKSouth; // Kyto South
+
+    int answerONorth; // Osaka North
+    int answerOSouth; // Osaka South
+
+    int answerNNorth;
+    int answerNSouth;
 
     public void Yamanashi(int answerYNorth, int answerYSouth) {
-        // this.name = name;
-        // this.question = question;
         this.answerYNorth = answerYNorth;
         this.answerYSouth = answerYSouth;
 
         Scanner direction = new Scanner(System.in);
         System.out.println("North or South?");
-    
+
         String response = direction.nextLine();
         System.out.println("You are going to" + " " + response);
-        
+
         direction.close();
 
         if (response == "north") {
@@ -43,7 +54,7 @@ public class Site {
 
             Scanner input = new Scanner(System.in);
             this.answerYSouth = input.nextInt();
-            input.close(); 
+            input.close();
 
             System.out.println("You're at Mt.Fuji");
             System.out.println("Guess the height of Mt. Fuji in meters (no commas)");
@@ -56,44 +67,291 @@ public class Site {
         }
     }
 
-    // public void Nara(String name, String question, int answer) {
-    // this.name = name;
-    // this.question = question;
-    // this.answer = answer;
-    // }
+    public void Nara(String answerNaNorth, String answerNaSouth) {
+        this.answerNaNorth = answerNaNorth;
+        this.answerNaSouth = answerNaSouth;
 
-    // public void Osaka(String name, String question, int answer) {
-    // this.name = name;
-    // this.question = question;
-    // this.answer = answer;
-    // }
+        Scanner direction = new Scanner(System.in);
+        System.out.println("North or South?");
 
-    // public void Niigata(String name, String question, int answer) {
-    // this.name = name;
-    // this.question = question;
-    // this.answer = answer;
-    // }
+        String response = direction.nextLine();
+        System.out.println("You are going to" + " " + response);
 
-    // public void Kyoto(String name, String question, int answer) {
-    // this.name = name;
-    // this.question = question;
-    // this.answer = answer;
-    // }
+        direction.close();
 
-    // public void Saitama(String name, String question, int answer) {
-    // this.name = name;
-    // this.question = question;
-    // this.answer = answer;
-    // }
+        if (response == "north") {
 
-    // public void tokyoStation(String name, String question, int answer) {
-    // this.name = name;
-    // this.question = question;
-    // this.answer = answer;
-    // }
+            Scanner input = new Scanner(System.in);
+            this.answerNaNorth = input.nextInt();
+            input.close();
+
+            System.out.println("You're at Nara City");
+            System.out.println("What is the mascot character of Nara? (Answer with the number)");
+
+            if (answerNaNorth == 1) {
+                System.out.println("Congrats!! You are right!! You gained a token");
+            } else {
+                System.out.println("You are incorrect! You lost a token.");
+            }
+
+        }
+
+        if (response == "south") {
+
+            Scanner input = new Scanner(System.in);
+            this.answerNaSouth = input.nextInt();
+            input.close();
+
+            System.out.println("You're at Asuka-mura");
+            System.out.println("Is Todai-ji temple a national heritage site? Yes(1) or no(0)");
+
+            if (answerNaSouth == 1) {
+                System.out.println("Congrats!! You are right!! You gained a token");
+            } else {
+                System.out.println("You are incorrect! You lost a token.");
+            }
+        }
+
+    }
+
+    public void Saitama(String answerSNorth, String amswerSouth) {
+        this.answerSNorth = answerSNorth;
+        this.amswerSouth = amswerSouth;
+
+        Scanner direction = new Scanner(System.in);
+        System.out.println("North or South?");
+
+        String response = direction.nextLine();
+        System.out.println("You are going to" + " " + response);
+
+        direction.close();
+
+        if (response == "north") {
+
+            Scanner input = new Scanner(System.in);
+            this.answerSNorth = input.nextInt();
+            input.close();
+
+            System.out.println("You're at Saitama City.");
+            System.out.println("What is the most prevalent foreign nationality among Saitama residents?");
+
+            if (answerSNorth == 1) {
+                System.out.println("Congrats!! You are right!! You gained a token");
+            } else {
+                System.out.println("You are incorrect! You lost a token.");
+            }
+
+        }
+
+        if (response == "south") {
+
+            Scanner input = new Scanner(System.in);
+            this.answerSSouth = input.nextInt();
+            input.close();
+
+            System.out.println("You're at Higashimatsuyama!");
+            System.out.println("You’re at Saitama Children’s zoo! What year did this zoo open?");
+
+            if (answerNaSouth == 1980) {
+                System.out.println("Congrats!! You are right!! You gained a token");
+            } else {
+                System.out.println("You are incorrect! You lost a token.");
+            }
+        }
+    }
+
+    public void Kyoto(String answerKNorth, String answerKSouth) {
+        this.answerKNorth = answerKNorth;
+        this.answerKSouth = answerKSouth;
+
+        Scanner direction = new Scanner(System.in);
+        System.out.println("North or South?");
+
+        String response = direction.nextLine();
+        System.out.println("You are going to" + " " + response);
+
+        direction.close();
+
+        if (response == "north") {
+
+            Scanner input = new Scanner(System.in);
+            this.answerKNorth = input.nextInt();
+            input.close();
+
+            System.out.println("You're at Northern Kyoto City");
+            System.out.println("Kinkakuji Temple (aka The Temple of the Golden Pavilion)");
+            System.out.println("What do they say the building is known for?");
+            System.out.println("Its exterior completely covered in gold leaf" + " " + "Yes-- type 1" + " "
+                    + "No-- type any number");
+
+            if (answerKNorth == 1) {
+                System.out.println(
+                        "Yes! The beautifully created golden exterior of Kinkakuji represents wealth, prosperity, and the pursuit of enlightenment. You gained a token");
+            } else {
+                System.out.println("You are incorrect! You lost a token.");
+            }
+
+            System.out.println(
+                    "Next question: Being the longest existing building out of all the historical buildings in Kyoto"
+                            + " " + "Yes-- type 1" + " " + "No-- type any number");
+
+            if (answerKNorth == 1) {
+                System.out.println(
+                        "Uh Oh… Kinkakuji was unfortunately burned down by a Buddhist monk back in 1950. The building we see today is a reconstruction of the building from 1955. Nice try!"
+                                + " " + "You lost a token.");
+            } else {
+                System.out.println("You are correct! You gained a token.");
+            }
+
+            System.out.println("Question 3:The temple does not have a single nail used in the entire structure" + " "
+                    + "Yes-- type 1" + " " + "No-- type any number");
+
+            if (answerKNorth == 1) {
+                System.out.println(
+                        "Uh Oh… You might be thinking of Kiyomizudera temple, which in fact was created without using a single nail in their temple structure"
+                                + " " + "You lost a token.");
+            } else {
+                System.out.println("You are correct! You gained a token.");
+            }
+
+            System.out.println("Last question!: Being the oldest building built in Kyoto");
+
+            if (answerKNorth == 1) {
+                System.out.println(
+                        "You might be thinking of Daigoji temple, which was built back in 951 as the oldest building in Kyoto. Kinkakuji was built in 1397! You lost a token.");
+            } else {
+                System.out.println("You are correct! You gained a token.");
+            }
+
+        }
+
+        if (response == "south") {
+
+            Scanner input = new Scanner(System.in);
+            this.answerKSouth = input.nextInt();
+            input.close();
+
+            System.out.println("You're at Uji City!");
+            System.out.println("Is Uji the best known as the place where tea was first cultivated in Japan?" + " "
+                    + "Yes-- type 1" + " " + "No-- type any number");
+
+            if (answerKSouth == 1) {
+                System.out.println(
+                        "Uji is best known as the place where tea was first cultivated in Japan in the Muromachi era. You gained a token");
+            } else {
+                System.out.println("You are incorrect! You lost a token.");
+            }
+        }
+    }
+
+    public void Osaka(String answerONorth, String answerOSouth) {
+        this.answerONorth = answerONorth;
+        this.answerOSouth = answerOSouth;
+
+        Scanner direction = new Scanner(System.in);
+        System.out.println("North or South?");
+
+        String response = direction.nextLine();
+        System.out.println("You are going to" + " " + response);
+
+        direction.close();
+
+        if (response == "north") {
+
+            Scanner input = new Scanner(System.in);
+            this.answerONorth = input.nextInt();
+            input.close();
+
+            System.out.println("You're at Northern Osaka City!");
+            System.out.println(
+                    "World Expos are known as International Registered Exhibitions. At World Expos, countries build extraordinary pavilions to introduce their countries");
+            System.out.println("Will World Expo 2025 be located in Osaka, Japan?" + " " + "Yes-- type 1" + " "
+                    + "No-- type any number");
+
+            if (answerONorth == 1) {
+                System.out.println(
+                        "Yes! Japan Association for the 2025 World Exposition has forecasted about that it will hold 282 million visitors during the term (154,000 visitors a day on average)");
+            } else {
+                System.out.println("... You lost a token...");
+            }
+        }
+
+        if (response == "south") {
+
+            Scanner input = new Scanner(System.in);
+            this.answerOSouth = input.nextInt();
+            input.close();
+
+            System.out.println("You're at Southern Osaka City!");
+            System.out.println("Do we have Universal Studio in Japan?" + " "
+                    + "Yes-- type 1" + " " + "No-- type any number");
+
+            if (answerOSouth == 1) {
+                System.out.println(
+                        "Yes! It was build in 2021 as the first Universal Studio to open outside the United States. You gained a token.");
+            } else {
+                System.out.println("Oops! You lost a token.");
+            }
+        }
+    }
+
+    public void Niigata(String answerNNorth, String answerNSouth) {
+        this.answerNNorth = answerNNorth;
+        this.answerNSouth = answerNSouth;
+
+        Scanner direction = new Scanner(System.in);
+        System.out.println("North or South?");
+
+        String response = direction.nextLine();
+        System.out.println("You are going to" + " " + response);
+
+        direction.close();
+
+        if (response == "north") {
+
+            Scanner input = new Scanner(System.in);
+            this.answerNNorth = input.nextInt();
+            input.close();
+
+            System.out.println("You're at Niigata City! (North part of Japan)");
+            System.out.println(
+                    "Does Niigata face the Japanese sea?" + " " + "Yes-- type 1" + " "
+                            + "No-- type any number");
+
+            if (answerNNorth == 1) {
+                System.out.println(
+                        "Yes! You gained a token!");
+            } else {
+                System.out.println("........ You lost a token...");
+            }
+        }
+
+        if (response == "south") {
+
+            Scanner input = new Scanner(System.in);
+            this.answerNSouth = input.nextInt();
+            input.close();
+
+            System.out.println("You're at Southern Niigata City!");
+            System.out.println("Is Niigata No.1 producing area for rice in Japan?" + " "
+                    + "Yes-- type 1" + " " + "No-- type any number");
+
+            if (answerNSouth == 1) {
+                System.out.println(
+                        "Yes! You gained a token.");
+            } else {
+                System.out.println("Oops! You lost a token.");
+            }
+        }
+    }
 
     public static void main(String[] args) {
-         Site mySite = new Site();
-         mySite.Yamanashi(112,3776); 
+        Site mySite = new Site();
+        mySite.Yamanashi(112, 3776);
+        mySite.Nara(null, null);
+        mySite.Saitama(null, null);
+        mySite.Kyoto(null, null);
+        mySite.Niigata(null, null);
+        mySite.Osaka(null, null);
     }
 }
