@@ -33,7 +33,7 @@ public class Site {
             scanner.close();
         }
 
-        if (response == "south") {
+        if (response.toLowerCase().equals("south")) {
 
             System.out.println("You are at Mt.Fuji");
             System.out.println("");
