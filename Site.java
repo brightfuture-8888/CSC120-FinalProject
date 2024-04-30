@@ -34,7 +34,7 @@ public class Site {
 
         direction.close();
 
-        if (response == "north") {
+        if (response.equals("north")) {
 
             Scanner input = new Scanner(System.in);
             this.answerYNorth = input.nextInt();
@@ -53,7 +53,7 @@ public class Site {
             scanner.close();
         }
 
-        if (response == "south") {
+        if (response.equals("south")) {
 
             Scanner input = new Scanner(System.in);
             this.answerYSouth = input.nextInt();
@@ -72,7 +72,7 @@ public class Site {
         }
     }
 
-    public void Nara(String answerNaNorth, String answerNaSouth) {
+    public void Nara(int answerNaNorth, int answerNaSouth) {
         this.answerNaNorth = answerNaNorth;
         this.answerNaSouth = answerNaSouth;
 
@@ -84,7 +84,7 @@ public class Site {
 
         direction.close();
 
-        if (response == "north") {
+        if (response.equals("north")) {
 
             Scanner input = new Scanner(System.in);
             this.answerNaNorth = input.nextInt();
@@ -101,7 +101,7 @@ public class Site {
 
         }
 
-        if (responsee.equals("south")) {
+        if (response.equals("south")) {
 
             Scanner input = new Scanner(System.in);
             this.answerNaSouth = input.nextInt();
@@ -119,7 +119,7 @@ public class Site {
 
     }
 
-    public void Saitama(String answerSNorth, String amswerSouth) {
+    public void Saitama(int answerSNorth, int amswerSouth) {
         this.answerSNorth = answerSNorth;
         this.amswerSouth = amswerSouth;
 
@@ -165,7 +165,7 @@ public class Site {
         }
     }
 
-    public void Kyoto(String answerKNorth, String answerKSouth) {
+    public void Kyoto(int answerKNorth, int answerKSouth) {
         this.answerKNorth = answerKNorth;
         this.answerKSouth = answerKSouth;
 
@@ -230,7 +230,7 @@ public class Site {
 
         }
 
-        if (response == "south") {
+        if (response.equals("south")) {
 
             Scanner input = new Scanner(System.in);
             this.answerKSouth = input.nextInt();
@@ -249,7 +249,7 @@ public class Site {
         }
     }
 
-    public void Osaka(String answerONorth, String answerOSouth) {
+    public void Osaka(int answerONorth, int answerOSouth) {
         this.answerONorth = answerONorth;
         this.answerOSouth = answerOSouth;
 
@@ -261,7 +261,7 @@ public class Site {
 
         direction.close();
 
-        if (response == "north") {
+        if (response.equals("north")) {
 
             Scanner input = new Scanner(System.in);
             this.answerONorth = input.nextInt();
@@ -281,7 +281,7 @@ public class Site {
             }
         }
 
-        if (response == "south") {
+        if (response.equals("south")) {
 
             Scanner input = new Scanner(System.in);
             this.answerOSouth = input.nextInt();
@@ -300,7 +300,7 @@ public class Site {
         }
     }
 
-    public void Niigata(String answerNNorth, String answerNSouth) {
+    public void Niigata(int answerNNorth, int answerNSouth) {
         this.answerNNorth = answerNNorth;
         this.answerNSouth = answerNSouth;
 
@@ -312,7 +312,7 @@ public class Site {
 
         direction.close();
 
-        if (response == "north") {
+        if (response.equals("north")) {
 
             Scanner input = new Scanner(System.in);
             this.answerNNorth = input.nextInt();
@@ -331,7 +331,7 @@ public class Site {
             }
         }
 
-        if (response == "south") {
+        if (response.equals("south")) {
 
             Scanner input = new Scanner(System.in);
             this.answerNSouth = input.nextInt();
