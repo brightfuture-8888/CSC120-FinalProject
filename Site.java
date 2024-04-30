@@ -5,23 +5,9 @@ public class Site {
     String response;
     boolean checkAnswer;
 
-    int answerYNorth; // Yamanashi North
-    int answerYSouth; // Yamanash South
+    int answerNorth;
+    int answerSouth;
 
-    int answerNaNorth; // Nara North
-    int answerNaSouth; // Nara South
-
-    int answerSNorth; // Saitama North
-    int answerSSouth; // Saitama South
-
-    int answerKNorth; // Kyoto North
-    int answerKSouth; // Kyto South
-
-    int answerONorth; // Osaka North
-    int answerOSouth; // Osaka South
-
-    int answerNNorth;
-    int answerNSouth;
 
     public void Yamanashi() {
 
@@ -35,7 +21,7 @@ public class Site {
 
         if (response.equals("north")) {
             Scanner input = new Scanner(System.in);
-            this.answerYNorth = input.nextInt();
+            this.answerNorth = input.nextInt();
             input.close();
 
             System.out.println("You're at Kouhu-shi");
@@ -54,7 +40,7 @@ public class Site {
         if (response.equals("south")) {
 
             Scanner input = new Scanner(System.in);
-            this.answerYSouth = input.nextInt();
+            this.answerSouth = input.nextInt();
             input.close();
 
             System.out.println("You are at Mt.Fuji");
