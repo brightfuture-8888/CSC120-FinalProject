@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Site {
+    
     String response;
     boolean checkAnswer;
 
@@ -35,7 +36,6 @@ public class Site {
         direction.close();
 
         if (response.equals("north")) {
-
             Scanner input = new Scanner(System.in);
             this.answerYNorth = input.nextInt();
             input.close();
@@ -43,14 +43,14 @@ public class Site {
             System.out.println("You're at Kouhu-shi");
             System.out.println("");
             System.out.println("How old is the oldest person in Yamanashi prefecture?");
-            int answerNorth = scanner.nextInt();
+            int answerNorth = input.nextInt();
 
             if (answerNorth == 112) {
                 System.out.println("Congrats!! You are right!! You gained a token");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
             }
-            scanner.close();
+            input.close();
         }
 
         if (response.equals("south")) {
@@ -63,7 +63,7 @@ public class Site {
             System.out.println("");
             System.out.println("Guess the height of Mt. Fuji in meters (no commas)");
 
-            int answerSouth = scanner.nextInt();
+            int answerSouth = input.nextInt();
             if (answerSouth == 3776) {
                 System.out.println("Congrats!! You are right!! You gained a token");
             } else {
@@ -119,9 +119,9 @@ public class Site {
 
     }
 
-    public void Saitama(int answerSNorth, int amswerSouth) {
+    public void Saitama(int answerSNorth, int amswerSSouth) {
         this.answerSNorth = answerSNorth;
-        this.amswerSouth = amswerSouth;
+        this.answerSSouth = amswerSSouth;
 
         Scanner direction = new Scanner(System.in);
         System.out.println("North or South?");
@@ -353,10 +353,10 @@ public class Site {
     public static void main(String[] args) {
         Site mySite = new Site();
         mySite.Yamanashi(112, 3776);
-        mySite.Nara(null, null);
-        mySite.Saitama(null, null);
-        mySite.Kyoto(null, null);
-        mySite.Niigata(null, null);
-        mySite.Osaka(null, null);
+        mySite.Nara(1, 1);
+        mySite.Saitama(1, 1);
+        mySite.Kyoto(1, 1);
+        mySite.Niigata(1, 1);
+        mySite.Osaka(1, 1);
     }
 }
