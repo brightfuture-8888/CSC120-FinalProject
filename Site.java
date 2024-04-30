@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Site {
-    
+
     String response;
     boolean checkAnswer;
 
@@ -25,7 +25,7 @@ public class Site {
 
     public void Yamanashi(int answerYNorth, int answerYSouth) {
         this.answerYNorth = answerYNorth;
-        this.answerYSouth = answerYSouth; 
+        this.answerYSouth = answerYSouth;
 
         Scanner direction = new Scanner(System.in);
         System.out.println("North or South?");
@@ -69,7 +69,10 @@ public class Site {
             } else {
                 System.out.println("You are incorrect! You lost a token.");
             }
+            input.close();
+
         }
+
     }
 
     public void Nara(int answerNaNorth, int answerNaSouth) {
@@ -98,6 +101,7 @@ public class Site {
             } else {
                 System.out.println("You are incorrect! You lost a token.");
             }
+            input.close();
 
         }
 
@@ -131,7 +135,7 @@ public class Site {
 
         direction.close();
 
-        if (response == "north") {
+        if (response.equals("north")) {
 
             Scanner input = new Scanner(System.in);
             this.answerSNorth = input.nextInt();
@@ -145,10 +149,11 @@ public class Site {
             } else {
                 System.out.println("You are incorrect! You lost a token.");
             }
+            input.close();
 
         }
 
-        if (response == "south") {
+        if (response.equals("south")) {
 
             Scanner input = new Scanner(System.in);
             this.answerSSouth = input.nextInt();
@@ -177,7 +182,7 @@ public class Site {
 
         direction.close();
 
-        if (response == "north") {
+        if (response.equals("north")) {
 
             Scanner input = new Scanner(System.in);
             this.answerKNorth = input.nextInt();
