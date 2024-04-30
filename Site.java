@@ -24,7 +24,7 @@ public class Site {
 
     public void Yamanashi(int answerYNorth, int answerYSouth) {
         this.answerYNorth = answerYNorth;
-        this.answerYSouth = answerYSouth;
+        this.answerYSouth = answerYSouth; 
 
         Scanner direction = new Scanner(System.in);
         System.out.println("North or South?");
@@ -96,7 +96,7 @@ public class Site {
 
         }
 
-        if (response == "south") {
+        if (responsee.equals("south")) {
 
             Scanner input = new Scanner(System.in);
             this.answerNaSouth = input.nextInt();
