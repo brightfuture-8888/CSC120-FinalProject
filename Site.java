@@ -23,9 +23,7 @@ public class Site {
     int answerNNorth;
     int answerNSouth;
 
-    public void Yamanashi(int answerYNorth, int answerYSouth) {
-        this.answerYNorth = answerYNorth;
-        this.answerYSouth = answerYSouth;
+    public void Yamanashi() {
 
         Scanner direction = new Scanner(System.in);
         System.out.println("North or South?");
@@ -70,7 +68,7 @@ public class Site {
                 System.out.println("You are incorrect! You lost a token.");
             }
             System.out.println("");
-            scanner.close();
+            input.close();
         }
     }
 
