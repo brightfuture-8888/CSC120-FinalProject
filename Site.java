@@ -5,41 +5,65 @@ public class Site {
     String response;
     boolean checkAnswer;
 
-    int answerNorth;
-    int answerSouth;
+    int answerYNorth; // Yamanashi North
+    int answerYSouth; // Yamanash South
 
-    public void Yamanashi() {
+    int answerNaNorth; // Nara North
+    int answerNaSouth; // Nara South
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("You have arrived at Yamanashi!");
+    int answerSNorth; // Saitama North
+    int answerSSouth; // Saitama South
 
-        System.out.println("Would you like to go North or South?");
-    
-        String response = scanner.nextLine();
-        System.out.println("You are going " + response);
+    int answerKNorth; // Kyoto North
+    int answerKSouth; // Kyto South
 
-        if (response.toLowerCase().equals("north"));{
+    int answerONorth; // Osaka North
+    int answerOSouth; // Osaka South
+
+    int answerNNorth;
+    int answerNSouth;
+
+    public void Yamanashi(int answerYNorth, int answerYSouth) {
+        this.answerYNorth = answerYNorth;
+        this.answerYSouth = answerYSouth;
+
+        Scanner direction = new Scanner(System.in);
+        System.out.println("North or South?");
+
+        String response = direction.nextLine();
+        System.out.println("You are going to" + " " + response);
+
+        direction.close();
+
+        if (response.equals("north")) {
+            Scanner input = new Scanner(System.in);
+            this.answerYNorth = input.nextInt();
+            input.close();
 
             System.out.println("You're at Kouhu-shi");
             System.out.println("");
             System.out.println("How old is the oldest person in Yamanashi prefecture?");
-            int answerNorth = scanner.nextInt();
+            int answerNorth = input.nextInt();
 
             if (answerNorth == 112) {
                 System.out.println("Congrats!! You are right!! You gained a token");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
             }
-            scanner.close();
+            input.close();
         }
 
-        if (response.toLowerCase().equals("south")) {
+        if (response.equals("south")) {
+
+            Scanner input = new Scanner(System.in);
+            this.answerYSouth = input.nextInt();
+            input.close();
 
             System.out.println("You are at Mt.Fuji");
             System.out.println("");
             System.out.println("Guess the height of Mt. Fuji in meters (no commas)");
 
-            int answerSouth = scanner.nextInt();
+            int answerSouth = input.nextInt();
             if (answerSouth == 3776) {
                 System.out.println("Congrats!! You are right!! You gained a token");
             } else {
