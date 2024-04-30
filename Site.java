@@ -41,13 +41,16 @@ public class Site {
             input.close();
 
             System.out.println("You're at Kouhu-shi");
+            System.out.println("");
             System.out.println("How old is the oldest person in Yamanashi prefecture?");
+            int answerNorth = scanner.nextInt();
 
-            if (answerYNorth == 112) {
+            if (answerNorth == 112) {
                 System.out.println("Congrats!! You are right!! You gained a token");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
             }
+            scanner.close();
         }
 
         if (response == "south") {
@@ -56,10 +59,12 @@ public class Site {
             this.answerYSouth = input.nextInt();
             input.close();
 
-            System.out.println("You're at Mt.Fuji");
+            System.out.println("You are at Mt.Fuji");
+            System.out.println("");
             System.out.println("Guess the height of Mt. Fuji in meters (no commas)");
 
-            if (answerYSouth == 3776) {
+            int answerSouth = scanner.nextInt();
+            if (answerSouth == 3776) {
                 System.out.println("Congrats!! You are right!! You gained a token");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
