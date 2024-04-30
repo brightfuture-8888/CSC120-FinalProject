@@ -67,6 +67,7 @@ public class Game{
     public void train(){
 
         System.out.println("You have now boarded the train! Choose a location to go to:");
+        // insert the option locations;
         while (true){
             String userInput = scanner.nextLine();
             if(userLocations.contains(userInput)){
@@ -78,11 +79,11 @@ public class Game{
                 site.Yamanashi();
                 userLocations.add(userInput);
                 break;
-            // } else if (userInput.toLowerCase().equals("Nara")){
-            //     Site site = new Site();
-            //     site.Nara();
-            //     userLocations.add(userInput);
-            //     break;
+            } else if (userInput.toLowerCase().equals("nara")){
+                Site site = new Site();
+                site.Nara();
+                userLocations.add(userInput);
+                break;
             } else {
                 System.out.println("Sorry, that location does not exist. Where would you like to go?");
             }
