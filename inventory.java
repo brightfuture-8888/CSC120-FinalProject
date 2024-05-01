@@ -8,17 +8,17 @@ public class inventory<Token> {
     private List<Token> tokens;       
 
     public inventory() {
-        tokens = new ArrayList<>(); 
+        tokens = new ArrayList<>();  
     }
 
     public void addToken(Token token) {
-        tokens.add(token);
+        tokens.add(token); 
     }
 
     public void displayToken() {
-        System.out.println("Inventory Tokens:"); 
+        System.out.println("You have"); 
         for (Token Token : tokens) {
-            System.out.println(Token); 
+            System.out.println(Token + "tokens"); 
         }
     }
 }
