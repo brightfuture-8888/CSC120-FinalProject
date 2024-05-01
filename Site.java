@@ -11,50 +11,43 @@ public class Site {
 
     public void Yamanashi() {
 
-        Scanner direction = new Scanner(System.in);
-        System.out.println("North or South?");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("You have arrived at Yamanashi");
 
-        String response = direction.nextLine();
-        System.out.println("You are going to" + " " + response);
+        System.out.println("Would you like to go North or South?");
 
-        direction.close();
+        String response = scanner.nextLine();
+        System.out.println("You are going " + response);
 
-        if (response.equals("north")) {
-            Scanner input = new Scanner(System.in);
-            this.answerNorth = input.nextInt();
-            input.close();
+        if (response.toLowerCase().equals("north")) {
 
             System.out.println("You're at Kouhu-shi");
             System.out.println("");
             System.out.println("How old is the oldest person in Yamanashi prefecture?");
-            int answerNorth = input.nextInt();
+            int answerNorth = scanner.nextInt();
 
             if (answerNorth == 112) {
                 System.out.println("Congrats!! You are right!! You gained a token");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
             }
-            input.close();
+            scanner.close();
         }
 
-        if (response.equals("south")) {
-
-            Scanner input = new Scanner(System.in);
-            this.answerSouth = input.nextInt();
-            input.close();
+        if (response.toLowerCase().equals("south")) {
 
             System.out.println("You are at Mt.Fuji");
             System.out.println("");
             System.out.println("Guess the height of Mt. Fuji in meters (no commas)");
 
-            int answerSouth = input.nextInt();
+            int answerSouth = scanner.nextInt();
             if (answerSouth == 3776) {
                 System.out.println("Congrats!! You are right!! You gained a token");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
             }
             System.out.println("");
-            input.close();
+            scanner.close();
         }
     }
 
@@ -115,10 +108,14 @@ public class Site {
             System.out.println("You're at Northern Osaka City");
             System.out.println("");
             System.out.println("World Expos are known as International Registered Exhibitions. At World Expos, countries build extraordinary pavilions to introduce their countries");
-            // Print out the options;
+            System.out.println("Will World Expo 2025 be located in Osaka, Japan?");
+            System.out.println("Yes-- type 1");
+            System.out.println("No-- type any number");
+
             int answerNorth = scanner.nextInt();
             if (answerNorth == 1) {
-                System.out.println("Congrats!! You are right!! You gained a token");
+                System.out.println("Yes! Japan Association for the 2025 World Exposition has forecasted about that it will hold 282 million visitors during the term (154,000 visitors a day on average)");
+                System.out.println("You gained a token");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
             }
@@ -130,10 +127,7 @@ public class Site {
 
             System.out.println("You are at Southern Osaka City!");
             System.out.println("");
-            System.out.println("World Expos are known as International Registered Exhibitions. At World Expos, countries build extraordinary pavilions to introduce their countries");
-            System.out.println("Will World Expo 2025 be located in Osaka, Japan?");
-            System.out.println("Yes-- type 1");
-            System.out.println("No-- type any number");
+            System.out.println("Do we have a Universal Studios in Japan? 1:Yes 2:No");
 
             int answerSouth = scanner.nextInt();
             if (answerSouth == 1) {
@@ -147,10 +141,144 @@ public class Site {
 
     }
 
-//    public void Niigata() {}
+    public void Niigata() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("You have arrived at Niigata!");
 
-    // public void Kyoto() {}
+        System.out.println("Would you like to go North or South?");
 
-    // public void Saitama() {}
+        String response = scanner.nextLine();
+        System.out.println("You are going " + response);
+
+        if (response.toLowerCase().equals("north"));{
+
+            System.out.println("You're at City");
+            System.out.println("");
+            System.out.println("Yes-- type 1");
+
+            int answerNorth = scanner.nextInt();
+            if (answerNorth == 1) {
+                System.out.println("Yes! Japan Association for the 2025 World Exposition has forecasted about that it will hold 282 million visitors during the term (154,000 visitors a day on average)");
+                System.out.println("You gained a token");
+            } else {
+                System.out.println("You are incorrect! You lost a token.");
+            }
+            System.out.println("");
+            scanner.close();
+        }
+
+        if (response.toLowerCase().equals("south")) {
+
+            System.out.println("You are at Southern Osaka City!");
+            System.out.println("");
+            System.out.println("Do we have a Universal Studios in Japan? 1:Yes 2:No");
+
+            int answerSouth = scanner.nextInt();
+            if (answerSouth == 1) {
+                System.out.println("Congrats!! You are right!! You gained a token");
+            } else {
+                System.out.println("You are incorrect! You lost a token.");
+            }
+            System.out.println("");
+            scanner.close();
+        }
+
+    }
+
+    public void Kyoto(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("You have arrived at Kyoto!");
+
+        System.out.println("Would you like to go North or South?");
+
+        String response = scanner.nextLine();
+        System.out.println("You are going " + response);
+
+        if (response.toLowerCase().equals("north"));{
+
+            System.out.println("You have arrived at the Kinkakuji Temple, one of the most popular sightseeing attractions in Kyoto. You hear the tour guide talking,");
+            System.out.println("");
+            System.out.println("What do they say the building is known for? (answer the number)");
+            System.out.println("1. Its exterior completely covered in gold leaf");
+            System.out.println("2. Being the longest existing building out of all the historical buildings in Kyoto");
+            System.out.println("3. The temple does not have a single nail used in the entire structure");
+            System.out.println("4. Being the oldest building built in Kyoto");
+
+            int answerNorth = scanner.nextInt();
+            if (answerNorth == 1) {
+                System.out.println("Yes! The beautifully created golden exterior of Kinkakuji represents wealth, prosperity, and the pursuit of enlightenment.");
+                System.out.println("You gained a token");
+            } else {
+                // add the other option descriptions
+                System.out.println("You are incorrect! You lost a token.");
+            }
+            System.out.println("");
+            scanner.close();
+        }
+
+        if (response.toLowerCase().equals("south")) {
+
+            System.out.println("You are at Southern Osaka City!");
+            System.out.println("");
+            System.out.println("Do we have a Universal Studios in Japan? 1:Yes 2:No");
+
+            int answerSouth = scanner.nextInt();
+            if (answerSouth == 1) {
+                System.out.println("Congrats!! You are right!! You gained a token");
+            } else {
+                System.out.println("You are incorrect! You lost a token.");
+            }
+            System.out.println("");
+            scanner.close();
+        }
+
+    }
+    public void Saitama() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("You have arrived at Saitama!");
+
+        System.out.println("Would you like to go North or South?");
+
+        String response = scanner.nextLine();
+        System.out.println("You are going " + response);
+
+        if (response.toLowerCase().equals("north"));{
+
+            System.out.println("You have arrived at North Saitama City");
+            System.out.println("");
+            System.out.println("What is the most prevalent foreign nationality among Saitama residents?");
+            System.out.println("1. China");
+            System.out.println("2. Korea");
+            System.out.println("3. US");
+            System.out.println("4. Australia");
+
+            int answerNorth = scanner.nextInt();
+            if (answerNorth == 1) {
+                System.out.println("Yes! That's right!");
+                System.out.println("You gained a token");
+            } else {
+                // add the other option descriptions
+                System.out.println("You are incorrect! You lost a token.");
+            }
+            System.out.println("");
+            scanner.close();
+        }
+
+        if (response.toLowerCase().equals("south")) {
+
+            System.out.println("You are at Saitama Children's Zoo!");
+            System.out.println("");
+            System.out.println("What year did this zoo open?");
+
+            int answerSouth = scanner.nextInt();
+            if (answerSouth == 1980) {
+                System.out.println("Congrats!! You are right!! You gained a token");
+            } else {
+                System.out.println("You are incorrect! You lost a token.");
+            }
+            System.out.println("");
+            scanner.close();
+        }
+    }
 
 }

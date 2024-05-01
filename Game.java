@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.HashSet;
 // import com.google.common.graph.*;
 
 // public class Game<Site> {
@@ -10,12 +9,7 @@ import java.util.HashSet;
 // }
 public class Game{
     private Scanner scanner;
-    private HashSet <String> userLocations;
-
-    public Game(){
-        userLocations = new HashSet<>();
-    }
-
+    
     public void start(){
         System.out.println("--------------------------------------------------------------------------");
         System.out.println("You are standing in the middle of Tokyo station. There is a coin locker here.");
@@ -61,38 +55,11 @@ public class Game{
                 break;
             }
         }
-        train();
-    }
-
-    public void train(){
-
-        System.out.println("You have now boarded the train! Choose a location to go to:");
-        // insert the option locations;
-        while (true){
-            String userInput = scanner.nextLine();
-            if(userLocations.contains(userInput)){
-                System.out.println("You have already visited this location. Please pick another location");
-            } else if (userInput.toLowerCase().equals("yamanashi")){
-                System.out.println("Headed to Yamanashi...");
-                scanner.nextLine();
-                Site site = new Site();
-                site.Yamanashi();
-                userLocations.add(userInput);
-                break;
-            } else if (userInput.toLowerCase().equals("nara")){
-                Site site = new Site();
-                site.Nara();
-                userLocations.add(userInput);
-                break;
-            } else {
-                System.out.println("Sorry, that location does not exist. Where would you like to go?");
-            }
-        }
-        // scanner = new Scanner(System.in);
+        Train train = new Train();
+        train.train();
 
     }
 
-    // }
     public static void main(String[] args) {
         Game game = new Game();
         game.start();
