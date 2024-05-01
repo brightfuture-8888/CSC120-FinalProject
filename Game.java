@@ -55,10 +55,14 @@ public class Game{
                 break;
             }
         }
-        Train train = new Train();
+        Train train = new Train(scanner);
         train.train();
+        // scanner.close();
 
     }
+    // public void end() {
+    //     scanner.close();
+    // }
 
     public static void main(String[] args) {
         Game game = new Game();

@@ -28,10 +28,11 @@ public class Site {
 
             if (answerNorth == 112) {
                 System.out.println("Congrats!! You are right!! You gained a token");
+                scanner.nextLine();
             } else {
                 System.out.println("You are incorrect! You lost a token.");
             }
-            scanner.close();
+            // scanner.close();
         }
 
         if (response.toLowerCase().equals("south")) {
@@ -47,7 +48,7 @@ public class Site {
                 System.out.println("You are incorrect! You lost a token.");
             }
             System.out.println("");
-            scanner.close();
+            // scanner.close();
         }
     }
 
@@ -73,7 +74,7 @@ public class Site {
                 System.out.println("You are incorrect! You lost a token.");
             }
             System.out.println("");
-            scanner.close();
+            // scanner.close();
         }
 
         if (response.toLowerCase().equals("south")) {
@@ -89,7 +90,7 @@ public class Site {
                 System.out.println("You are incorrect! You lost a token.");
             }
             System.out.println("");
-            scanner.close();
+            // scanner.close();
         }
 
     }
@@ -120,7 +121,7 @@ public class Site {
                 System.out.println("You are incorrect! You lost a token.");
             }
             System.out.println("");
-            scanner.close();
+            // scanner.close();
         }
 
         if (response.toLowerCase().equals("south")) {
@@ -136,7 +137,7 @@ public class Site {
                 System.out.println("You are incorrect! You lost a token.");
             }
             System.out.println("");
-            scanner.close();
+            // scanner.close();
         }
 
     }
@@ -152,24 +153,24 @@ public class Site {
 
         if (response.toLowerCase().equals("north"));{
 
-            System.out.println("You're at City");
+            System.out.println("You're at North Niigata City");
             System.out.println("");
-            System.out.println("Yes-- type 1");
+            System.out.println("Does Niigata face the Japanese sea? Yes or no Yes (1), No (2)");
 
             int answerNorth = scanner.nextInt();
             if (answerNorth == 1) {
-                System.out.println("Yes! Japan Association for the 2025 World Exposition has forecasted about that it will hold 282 million visitors during the term (154,000 visitors a day on average)");
+                System.out.println("Yes! That is correct! You have gained a token)");
                 System.out.println("You gained a token");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
             }
             System.out.println("");
-            scanner.close();
+            // scanner.close();
         }
 
         if (response.toLowerCase().equals("south")) {
 
-            System.out.println("You are at Southern Osaka City!");
+            System.out.println("You are at Southern Niigata City!");
             System.out.println("");
             System.out.println("Do we have a Universal Studios in Japan? 1:Yes 2:No");
 
@@ -180,7 +181,7 @@ public class Site {
                 System.out.println("You are incorrect! You lost a token.");
             }
             System.out.println("");
-            scanner.close();
+            // scanner.close();
         }
 
     }
@@ -213,7 +214,7 @@ public class Site {
                 System.out.println("You are incorrect! You lost a token.");
             }
             System.out.println("");
-            scanner.close();
+            // scanner.close();
         }
 
         if (response.toLowerCase().equals("south")) {
@@ -229,7 +230,7 @@ public class Site {
                 System.out.println("You are incorrect! You lost a token.");
             }
             System.out.println("");
-            scanner.close();
+            // scanner.close();
         }
 
     }
@@ -261,7 +262,6 @@ public class Site {
                 System.out.println("You are incorrect! You lost a token.");
             }
             System.out.println("");
-            scanner.close();
         }
 
         if (response.toLowerCase().equals("south")) {
@@ -277,7 +277,6 @@ public class Site {
                 System.out.println("You are incorrect! You lost a token.");
             }
             System.out.println("");
-            scanner.close();
         }
     }
 

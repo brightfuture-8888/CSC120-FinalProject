@@ -5,10 +5,13 @@ public class Train {
 
     private Scanner scanner;
     private HashSet <String> userLocations;
+    private ReturnTrain returnTrain;
 
-    public Train(){
-        scanner = new Scanner(System.in);
+
+    public Train(Scanner scanner){
+        this.scanner = scanner;
         userLocations = new HashSet<>();
+        returnTrain = new ReturnTrain(scanner);
     }
 
     public void train(){
@@ -16,6 +19,7 @@ public class Train {
         System.out.println("You have now boarded the train! Choose a location to go to:");
         System.out.println("Yamanashi | Kyoto | Nara | Saitama | Niigata | Osaka ");
 
+        returnTrain = new ReturnTrain(scanner);
         while (true){
             String userInput = scanner.nextLine();
             if(userLocations.contains(userInput)){
@@ -24,54 +28,61 @@ public class Train {
             } else if (userInput.toLowerCase().equals("yamanashi")){
                 System.out.println("Headed to Yamanashi...");
                 scanner.nextLine();
-                Site site = new Site();
-                site.Yamanashi();
                 userLocations.add(userInput);
-                break;
+                goToSite("yamanashi");
 
             } else if (userInput.toLowerCase().equals("nara")){
                 System.out.println("Headed to Nara...");
                 scanner.nextLine();
-                Site site = new Site();
-                site.Nara();
                 userLocations.add(userInput);
-                break;
+                goToSite("nara");
+                
 
             } else if (userInput.toLowerCase().equals("osaka")){
                 System.out.println("Headed to Osaka...");
                 scanner.nextLine();
-                Site site = new Site();
-                site.Osaka();
                 userLocations.add(userInput);
-                break;
+                goToSite("osaka");
 
             } else if (userInput.toLowerCase().equals("kyoto")){
                 System.out.println("Headed to Kyoto...");
                 scanner.nextLine();
-                Site site = new Site();
-                site.Kyoto();
                 userLocations.add(userInput);
-                break;
+                goToSite("kyoto");
 
             } else if (userInput.toLowerCase().equals("niigata")){
                 System.out.println("Headed to Niigata...");
                 scanner.nextLine();
-                Site site = new Site();
-                site.Niigata();
                 userLocations.add(userInput);
-                break;
+                goToSite("niigata");
             
             } else if (userInput.toLowerCase().equals("saitama")){
                 System.out.println("Headed to Saitama...");
                 scanner.nextLine();
-                Site site = new Site();
-                site.Saitama();
                 userLocations.add(userInput);
-                break;
+                goToSite("saitama");
 
             } else {
                 System.out.println("Sorry, that location does not exist. Where would you like to go?");
             }
         }
+    }
+    private void goToSite(String siteArea){
+        Site site = new Site();
+        switch (siteArea){
+            case "yamanashi": site.Yamanashi();
+            break;
+            case "nara": site.Nara();
+            break;
+            case "osaka": site.Osaka();
+            break;
+            case "kyoto": site.Kyoto();
+            break;
+            case "niigata": site.Niigata();
+            break;
+            case "saitama": site.Saitama();
+            break;
+        }
+        returnTrain.goBack(this);
     }
 }
