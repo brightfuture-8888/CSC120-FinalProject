@@ -16,7 +16,7 @@ public class Game{
         play();
     }
     public void play(){
-        scanner = new Scanner(System.in);
+        scanner = new Scanner(System.in); 
         boolean coinLocker = false;
         boolean phoneMessage = false;
         boolean closeMessage = false;
@@ -46,6 +46,7 @@ public class Game{
             } else if (coinLocker && phoneMessage && closeMessage && userInput.toLowerCase().equals("board train")){
                 System.out.println("Boarding Train...");
                 scanner.nextLine();
+                System.out.println("Hit enter");
                 System.out.println("-Train Boarded-");
                 boardTrain = true;
             } else if (coinLocker && phoneMessage && closeMessage && !boardTrain){
@@ -67,7 +68,7 @@ public class Game{
     public static void main(String[] args) {
         Game game = new Game();
         game.start();
-        game.scanner.close();
+        game.scanner.close(); 
     }
     
 }

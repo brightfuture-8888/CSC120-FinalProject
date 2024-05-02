@@ -28,6 +28,7 @@ public class Site {
 
             if (answerNorth == 112) {
                 System.out.println("Congrats!! You are right!! You gained a token");
+                
                 scanner.nextLine();
             } else {
                 System.out.println("You are incorrect! You lost a token.");

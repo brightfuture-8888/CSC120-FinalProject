@@ -54,7 +54,7 @@ public class Train {
                 System.out.println("Headed to Niigata...");
                 scanner.nextLine();
                 userLocations.add(userInput);
-                goToSite("niigata");
+                goToSite("niigata"); 
             
             } else if (userInput.toLowerCase().equals("saitama")){
                 System.out.println("Headed to Saitama...");
