@@ -7,6 +7,7 @@ public class Site {
 
     int answerNorth;
     int answerSouth;
+    int tokens = 0;
 
 
     public void Yamanashi() {
@@ -28,9 +29,13 @@ public class Site {
 
             if (answerNorth == 112) {
                 System.out.println("Congrats!! You are right!! You gained a token");
+                tokens = tokens + 1;
+                System.out.println("you have" + tokens + "token(s)");
                 scanner.nextLine();
             } else {
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("you have" + tokens + "token(s)");
             }
             // scanner.close();
         }
@@ -44,8 +49,12 @@ public class Site {
             int answerSouth = scanner.nextInt();
             if (answerSouth == 3776) {
                 System.out.println("Congrats!! You are right!! You gained a token");
+                tokens = tokens + 1;
+                System.out.println("you have" + tokens + "token(s)");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("you have" + tokens + "token(s)");
             }
             System.out.println("");
             // scanner.close();
@@ -70,8 +79,12 @@ public class Site {
             int answerNorth = scanner.nextInt();
             if (answerNorth == 1) {
                 System.out.println("Congrats!! You are right!! You gained a token");
+                tokens = tokens + 1;
+                System.out.println("you have" + tokens + "token(s)");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("you have" + tokens + "token(s)");
             }
             System.out.println("");
             // scanner.close();
@@ -86,8 +99,12 @@ public class Site {
             int answerSouth = scanner.nextInt();
             if (answerSouth == 1) {
                 System.out.println("Congrats!! You are right!! You gained a token");
+                tokens = tokens + 1;
+                System.out.println("you have" + tokens + "token(s)");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("you have" + tokens + "token(s)");
             }
             System.out.println("");
             // scanner.close();
@@ -117,8 +134,12 @@ public class Site {
             if (answerNorth == 1) {
                 System.out.println("Yes! Japan Association for the 2025 World Exposition has forecasted about that it will hold 282 million visitors during the term (154,000 visitors a day on average)");
                 System.out.println("You gained a token");
+                tokens = tokens + 1;
+                System.out.println("you have" + tokens + "token(s)");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("you have" + tokens + "token(s)");
             }
             System.out.println("");
             // scanner.close();
@@ -133,8 +154,12 @@ public class Site {
             int answerSouth = scanner.nextInt();
             if (answerSouth == 1) {
                 System.out.println("Congrats!! You are right!! You gained a token");
+                tokens = tokens + 1;
+                System.out.println("you have" + tokens + "token(s)");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("you have" + tokens + "token(s)");
             }
             System.out.println("");
             // scanner.close();
@@ -161,8 +186,12 @@ public class Site {
             if (answerNorth == 1) {
                 System.out.println("Yes! That is correct! You have gained a token)");
                 System.out.println("You gained a token");
+                tokens = tokens + 1;
+                System.out.println("you have" + tokens + "token(s)");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("you have" + tokens + "token(s)");
             }
             System.out.println("");
             // scanner.close();
@@ -177,8 +206,12 @@ public class Site {
             int answerSouth = scanner.nextInt();
             if (answerSouth == 1) {
                 System.out.println("Congrats!! You are right!! You gained a token");
+                tokens = tokens + 1;
+                System.out.println("you have" + tokens + "token(s)");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("you have" + tokens + "token(s)");
             }
             System.out.println("");
             // scanner.close();
@@ -209,9 +242,13 @@ public class Site {
             if (answerNorth == 1) {
                 System.out.println("Yes! The beautifully created golden exterior of Kinkakuji represents wealth, prosperity, and the pursuit of enlightenment.");
                 System.out.println("You gained a token");
+                tokens = tokens + 1;
+                System.out.println("you have" + tokens + "token(s)");
             } else {
                 // add the other option descriptions
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("you have" + tokens + "token(s)");
             }
             System.out.println("");
             // scanner.close();
@@ -226,8 +263,12 @@ public class Site {
             int answerSouth = scanner.nextInt();
             if (answerSouth == 1) {
                 System.out.println("Congrats!! You are right!! You gained a token");
+                tokens = tokens + 1;
+                System.out.println("you have" + tokens + "token(s)");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("you have" + tokens + "token(s)");
             }
             System.out.println("");
             // scanner.close();
@@ -257,9 +298,13 @@ public class Site {
             if (answerNorth == 1) {
                 System.out.println("Yes! That's right!");
                 System.out.println("You gained a token");
+                tokens = tokens + 1;
+                System.out.println("you have" + tokens + "token(s)");
             } else {
                 // add the other option descriptions
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("you have" + tokens + "token(s)");
             }
             System.out.println("");
         }
@@ -273,8 +318,12 @@ public class Site {
             int answerSouth = scanner.nextInt();
             if (answerSouth == 1980) {
                 System.out.println("Congrats!! You are right!! You gained a token");
+                tokens = tokens + 1;
+                System.out.println("you have" + tokens + "token(s)");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("you have" + tokens + "token(s)");
             }
             System.out.println("");
         }
