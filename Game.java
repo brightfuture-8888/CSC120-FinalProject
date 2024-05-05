@@ -23,11 +23,11 @@ public class Game{
         boolean boardTrain = false;
 
         while (true){
-            System.out.println("What would you like to do?");
+            System.out.println("What would you like to do? hint: open coin locker");
             String userInput = scanner.nextLine();
 
             if (userInput.toLowerCase().equals("open coin locker")){
-                System.out.println("Opening the coin locker reveals a phone that has a message.");
+                System.out.println("Opening the coin locker reveals a phone that has a message. hint: read message");
                 coinLocker = true;
             } else if (coinLocker && userInput.toLowerCase().equals("read message")){
                 System.out.println("-Message Opened-");
@@ -39,7 +39,7 @@ public class Game{
             } else if (coinLocker && !phoneMessage){
                 System.out.println("Sorry, I didn't get that. There is a message on the phone");
             } else if (coinLocker && phoneMessage && userInput.toLowerCase().equals("close message")){
-                System.out.println("-Message Closed-");
+                System.out.println("-Message Closed-"); 
                 closeMessage = true;
             } else if (coinLocker && phoneMessage && !closeMessage){
                 System.out.println("The message is still opened, you have to close it first!");
