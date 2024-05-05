@@ -11,7 +11,7 @@ public class ReturnTrain {
     public void goBack(Train train){
     System.out.println("What would you like to do next?");
     System.out.println("1. Go back to the train");  
-    System.out.println("2.Exit adventure");
+    System.out.println("2.Exit adventure"); 
 
     int response;
     while (true){
