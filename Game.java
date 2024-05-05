@@ -16,7 +16,7 @@ public class Game{
         play();
     }
     public void play(){
-        scanner = new Scanner(System.in);
+        scanner = new Scanner(System.in); 
         boolean coinLocker = false;
         boolean phoneMessage = false;
         boolean closeMessage = false;
@@ -31,7 +31,7 @@ public class Game{
                 coinLocker = true;
             } else if (coinLocker && userInput.toLowerCase().equals("read message")){
                 System.out.println("-Message Opened-");
-                System.out.println("");
+                System.out.println(""); 
                 System.out.println("Welcome to Japan! In this interavtive adventure game, you will explore different prefectures in the country, and complete missions along the way. There is a train waiting for you to board. Good luck!");
                 phoneMessage = true;
             } else if (!coinLocker){
@@ -45,9 +45,10 @@ public class Game{
                 System.out.println("The message is still opened, you have to close it first!");
             } else if (coinLocker && phoneMessage && closeMessage && userInput.toLowerCase().equals("board train")){
                 System.out.println("Boarding Train...");
+                System.out.println("Hit enter");
                 scanner.nextLine();
                 System.out.println("-Train Boarded-");
-                boardTrain = true;
+                boardTrain = true; 
             } else if (coinLocker && phoneMessage && closeMessage && !boardTrain){
                 System.out.println("Directions are not clear. Board the train to resume journey.");
             }
@@ -67,7 +68,7 @@ public class Game{
     public static void main(String[] args) {
         Game game = new Game();
         game.start();
-        game.scanner.close();
+        game.scanner.close(); 
     }
     
 }
