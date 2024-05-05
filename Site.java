@@ -7,7 +7,7 @@ public class Site {
 
     int answerNorth;
     int answerSouth;
-
+    int tokens = 0;
 
     public void Yamanashi() {
 
@@ -28,10 +28,14 @@ public class Site {
 
             if (answerNorth == 112) {
                 System.out.println("Congrats!! You are right!! You gained a token");
-                
+                tokens = tokens + 1;
+                System.out.println("You now have" + tokens + "token(s)");
+
                 scanner.nextLine();
             } else {
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("You now have" + tokens + "token(s)");
             }
             // scanner.close();
         }
@@ -45,8 +49,13 @@ public class Site {
             int answerSouth = scanner.nextInt();
             if (answerSouth == 3776) {
                 System.out.println("Congrats!! You are right!! You gained a token");
+                tokens = tokens + 1;
+                System.out.println("You now have" + tokens + "token(s)");
+
             } else {
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("You now have" + tokens + "token(s)");
             }
             System.out.println("");
             // scanner.close();
@@ -62,17 +71,25 @@ public class Site {
         String response = scanner.nextLine();
         System.out.println("You are going " + response);
 
-        if (response.toLowerCase().equals("north"));{
+        if (response.toLowerCase().equals("north"))
+            ;
+        {
 
             System.out.println("You're at Nara City");
             System.out.println("");
-            System.out.println("What is the mascot character of Nara? (Answer with the number)");
+            System.out.println(
+                    "What is the mascot character of Nara? Answer in numbers! Option 1- Sentokun, Option 2- Funashii");
             // Print out the options;
             int answerNorth = scanner.nextInt();
             if (answerNorth == 1) {
                 System.out.println("Congrats!! You are right!! You gained a token");
+                tokens = tokens + 1;
+                System.out.println("You now have" + tokens + "token(s)");
+
             } else {
-                System.out.println("You are incorrect! You lost a token.");
+                System.out.println("You are incorrect!");
+                tokens = tokens - 1;
+                System.out.println("You now have" + tokens + "token(s)");
             }
             System.out.println("");
             // scanner.close();
@@ -87,8 +104,12 @@ public class Site {
             int answerSouth = scanner.nextInt();
             if (answerSouth == 1) {
                 System.out.println("Congrats!! You are right!! You gained a token");
+                tokens = tokens + 1;
+                System.out.println("You now have" + tokens + "token(s)");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("You now have" + tokens + "token(s)");
             }
             System.out.println("");
             // scanner.close();
@@ -105,21 +126,28 @@ public class Site {
         String response = scanner.nextLine();
         System.out.println("You are going " + response);
 
-        if (response.toLowerCase().equals("north"));{
+        if (response.toLowerCase().equals("north"))
+            ;
+        {
 
             System.out.println("You're at Northern Osaka City");
             System.out.println("");
-            System.out.println("World Expos are known as International Registered Exhibitions. At World Expos, countries build extraordinary pavilions to introduce their countries");
+            System.out.println(
+                    "World Expos are known as International Registered Exhibitions. At World Expos, countries build extraordinary pavilions to introduce their countries");
             System.out.println("Will World Expo 2025 be located in Osaka, Japan?");
             System.out.println("Yes-- type 1");
             System.out.println("No-- type any number");
 
             int answerNorth = scanner.nextInt();
             if (answerNorth == 1) {
-                System.out.println("Yes! Japan Association for the 2025 World Exposition has forecasted about that it will hold 282 million visitors during the term (154,000 visitors a day on average)");
-                System.out.println("You gained a token");
+                System.out.println(
+                        "Yes! Japan Association for the 2025 World Exposition has forecasted about that it will hold 282 million visitors during the term (154,000 visitors a day on average)");
+                tokens = tokens + 1;
+                System.out.println("You now have" + tokens + "token(s)");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("You now have" + tokens + "token(s)");
             }
             System.out.println("");
             // scanner.close();
@@ -134,8 +162,12 @@ public class Site {
             int answerSouth = scanner.nextInt();
             if (answerSouth == 1) {
                 System.out.println("Congrats!! You are right!! You gained a token");
+                tokens = tokens + 1;
+                System.out.println("You now have" + tokens + "token(s)");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("You now have" + tokens + "token(s)");
             }
             System.out.println("");
             // scanner.close();
@@ -152,7 +184,9 @@ public class Site {
         String response = scanner.nextLine();
         System.out.println("You are going " + response);
 
-        if (response.toLowerCase().equals("north"));{
+        if (response.toLowerCase().equals("north"))
+            ;
+        {
 
             System.out.println("You're at North Niigata City");
             System.out.println("");
@@ -161,9 +195,12 @@ public class Site {
             int answerNorth = scanner.nextInt();
             if (answerNorth == 1) {
                 System.out.println("Yes! That is correct! You have gained a token)");
-                System.out.println("You gained a token");
+                tokens = tokens + 1;
+                System.out.println("You now have" + tokens + "token(s)");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("You now have" + tokens + "token(s)");
             }
             System.out.println("");
             // scanner.close();
@@ -178,8 +215,12 @@ public class Site {
             int answerSouth = scanner.nextInt();
             if (answerSouth == 1) {
                 System.out.println("Congrats!! You are right!! You gained a token");
+                tokens = tokens + 1;
+                System.out.println("You now have" + tokens + "token(s)");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("You now have" + tokens + "token(s)");
             }
             System.out.println("");
             // scanner.close();
@@ -187,7 +228,7 @@ public class Site {
 
     }
 
-    public void Kyoto(){
+    public void Kyoto() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("You have arrived at Kyoto!");
 
@@ -196,9 +237,12 @@ public class Site {
         String response = scanner.nextLine();
         System.out.println("You are going " + response);
 
-        if (response.toLowerCase().equals("north"));{
+        if (response.toLowerCase().equals("north"))
+            ;
+        {
 
-            System.out.println("You have arrived at the Kinkakuji Temple, one of the most popular sightseeing attractions in Kyoto. You hear the tour guide talking,");
+            System.out.println(
+                    "You have arrived at the Kinkakuji Temple, one of the most popular sightseeing attractions in Kyoto. You hear the tour guide talking,");
             System.out.println("");
             System.out.println("What do they say the building is known for? (answer the number)");
             System.out.println("1. Its exterior completely covered in gold leaf");
@@ -208,11 +252,15 @@ public class Site {
 
             int answerNorth = scanner.nextInt();
             if (answerNorth == 1) {
-                System.out.println("Yes! The beautifully created golden exterior of Kinkakuji represents wealth, prosperity, and the pursuit of enlightenment.");
-                System.out.println("You gained a token");
+                System.out.println(
+                        "Yes! The beautifully created golden exterior of Kinkakuji represents wealth, prosperity, and the pursuit of enlightenment.");
+                tokens = tokens + 1;
+                System.out.println("You now have" + tokens + "token(s)");
             } else {
                 // add the other option descriptions
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("You now have" + tokens + "token(s)");
             }
             System.out.println("");
             // scanner.close();
@@ -226,15 +274,20 @@ public class Site {
 
             int answerSouth = scanner.nextInt();
             if (answerSouth == 1) {
-                System.out.println("Congrats!! You are right!! You gained a token");
+                System.out.println("Congrats!! You are right!!");
+                tokens = tokens + 1;
+                System.out.println("You now have" + tokens + "token(s)");
             } else {
-                System.out.println("You are incorrect! You lost a token.");
+                System.out.println("You are incorrect!");
+                tokens = tokens - 1;
+                System.out.println("You now have" + tokens + "token(s)");
             }
             System.out.println("");
             // scanner.close();
         }
 
     }
+
     public void Saitama() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("You have arrived at Saitama!");
@@ -244,7 +297,9 @@ public class Site {
         String response = scanner.nextLine();
         System.out.println("You are going " + response);
 
-        if (response.toLowerCase().equals("north"));{
+        if (response.toLowerCase().equals("north"))
+            ;
+        {
 
             System.out.println("You have arrived at North Saitama City");
             System.out.println("");
@@ -257,10 +312,13 @@ public class Site {
             int answerNorth = scanner.nextInt();
             if (answerNorth == 1) {
                 System.out.println("Yes! That's right!");
-                System.out.println("You gained a token");
+                tokens = tokens + 1;
+                System.out.println("You now have" + tokens + "token(s)");
             } else {
                 // add the other option descriptions
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("You now have" + tokens + "token(s)");
             }
             System.out.println("");
         }
@@ -273,9 +331,13 @@ public class Site {
 
             int answerSouth = scanner.nextInt();
             if (answerSouth == 1980) {
-                System.out.println("Congrats!! You are right!! You gained a token");
+                System.out.println("Congrats!! You are right!!");
+                tokens = tokens + 1;
+                System.out.println("You now have" + tokens + "token(s)");
             } else {
                 System.out.println("You are incorrect! You lost a token.");
+                tokens = tokens - 1;
+                System.out.println("You now have" + tokens + "token(s)");
             }
             System.out.println("");
         }
