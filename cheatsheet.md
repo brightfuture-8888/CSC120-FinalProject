@@ -8,3 +8,10 @@ Note:  It's a good idea to also make this list available inside the game, in res
 If your game includes challenges that must be overcome to win, also list them below.
 
 We will ask players to type 1 to answer yes or type any other number to answer no in order to accomplish our quiz game. We will not ask them to type action commends. Rather, it would be a simple command you type in numbers. 
+
+--------------------------------------------
+
+The player is in Tokyo situation. They open a coin locker to get a phone to get a message about the way of playing this game. 
+
+Type open coin locker first then type read message 
+
