@@ -1,20 +1,22 @@
 import java.util.Scanner;
-// import com.google.common.graph.*;
 
-// public class Game<Site> {
-//     int currentScore;
-//     String currentLocation;
-//     ImmutableGraph<Site> map; 
-    
-// }
+/**
+ * Create Game Class 
+ */
 public class Game{
     private Scanner scanner;
     
+    /**
+     * Create start method to tell the player that they are in Tokyo station 
+     */
     public void start(){
         System.out.println("--------------------------------------------------------------------------");
         System.out.println("You are standing in the middle of Tokyo station. There is a coin locker here.");
         play();
     }
+    /**
+     * Create play method 
+     */
     public void play(){
         scanner = new Scanner(System.in); 
         boolean coinLocker = false;
@@ -57,13 +59,14 @@ public class Game{
         }
         Train train = new Train(scanner);
         train.train();
-        // scanner.close();
+        
 
     }
-    // public void end() {
-    //     scanner.close();
-    // }
-
+  
+    /**
+     * Main to start the game and end the game 
+     * @param args
+     */
     public static void main(String[] args) {
         Game game = new Game();
         game.start();

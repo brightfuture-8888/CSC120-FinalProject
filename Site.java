@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/**
+ * Create Site Class
+ */
 public class Site {
 
     String response;
@@ -9,6 +12,9 @@ public class Site {
     int answerSouth;
     int tokens = 0;
 
+    /**
+     * Create Yamanashi method to get quizzes at Yamanashi
+     */
     public void Yamanashi() {
 
         Scanner scanner = new Scanner(System.in);
@@ -19,6 +25,9 @@ public class Site {
         String response = scanner.nextLine();
         System.out.println("You are going " + response);
 
+        /**
+         * Tell the player the question on the North
+         */
         if (response.toLowerCase().equals("north")) {
 
             System.out.println("You're at Kouhu-shi");
@@ -26,6 +35,10 @@ public class Site {
             System.out.println("How old is the oldest person in Yamanashi prefecture?");
             int answerNorth = scanner.nextInt();
 
+            /**
+             * The player will get a token if they get correct. Otherwise, they will lose a
+             * token
+             */
             if (answerNorth == 112) {
                 System.out.println("Congrats!! You are right!! You gained a token");
                 tokens = tokens + 1;
@@ -37,15 +50,21 @@ public class Site {
                 tokens = tokens - 1;
                 System.out.println("You now have" + tokens + "token(s)");
             }
-            // scanner.close();
         }
 
+        /**
+         * Tell the player the question on the South
+         */
         if (response.toLowerCase().equals("south")) {
 
             System.out.println("You are at Mt.Fuji");
             System.out.println("");
             System.out.println("Guess the height of Mt. Fuji in meters (no commas)");
 
+            /**
+             * The player will get a token if they get correct. Otherwise, they will lose a
+             * token
+             */
             int answerSouth = scanner.nextInt();
             if (answerSouth == 3776) {
                 System.out.println("Congrats!! You are right!! You gained a token");
@@ -58,10 +77,13 @@ public class Site {
                 System.out.println("You now have" + tokens + "token(s)");
             }
             System.out.println("");
-            // scanner.close();
         }
     }
 
+    /**
+     * Create Nara method
+     * Asking the player if they want to go to North or South
+     */
     public void Nara() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("You have arrived at Nara!");
@@ -79,7 +101,11 @@ public class Site {
             System.out.println("");
             System.out.println(
                     "What is the mascot character of Nara? Answer in numbers! Option 1- Sentokun, Option 2- Funashii");
-            // Print out the options;
+
+            /**
+             * The player will get a token if they get correct. Otherwise, they will lose a
+             * token
+             */
             int answerNorth = scanner.nextInt();
             if (answerNorth == 1) {
                 System.out.println("Congrats!! You are right!! You gained a token");
@@ -92,15 +118,21 @@ public class Site {
                 System.out.println("You now have" + tokens + "token(s)");
             }
             System.out.println("");
-            // scanner.close();
         }
 
+        /**
+         * Show the South option
+         */
         if (response.toLowerCase().equals("south")) {
 
             System.out.println("You are at Asuka-Mura");
             System.out.println("");
             System.out.println("Is Todai-ji temple a national heritage site? Yes(1) or no(0)");
 
+            /**
+             * The player will get a token if they get correct. Otherwise, they will lose a
+             * token
+             */
             int answerSouth = scanner.nextInt();
             if (answerSouth == 1) {
                 System.out.println("Congrats!! You are right!! You gained a token");
@@ -112,11 +144,13 @@ public class Site {
                 System.out.println("You now have" + tokens + "token(s)");
             }
             System.out.println("");
-            // scanner.close();
         }
 
     }
 
+    /**
+     * Create Osaka method
+     */
     public void Osaka() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("You have arrived at Osaka!");
@@ -126,6 +160,9 @@ public class Site {
         String response = scanner.nextLine();
         System.out.println("You are going " + response);
 
+        /**
+         * Create North option
+         */
         if (response.toLowerCase().equals("north"))
             ;
         {
@@ -153,6 +190,9 @@ public class Site {
             // scanner.close();
         }
 
+        /**
+         * Create South option
+         */
         if (response.toLowerCase().equals("south")) {
 
             System.out.println("You are at Southern Osaka City!");
@@ -175,6 +215,9 @@ public class Site {
 
     }
 
+    /**
+     * Create Niigata method
+     */
     public void Niigata() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("You have arrived at Niigata!");
@@ -188,10 +231,17 @@ public class Site {
             ;
         {
 
+            /**
+             * Create North option
+             */
             System.out.println("You're at North Niigata City");
             System.out.println("");
             System.out.println("Does Niigata face the Japanese sea? Yes or no Yes (1), No (2)");
 
+            /**
+             * The player will get a token if they get correct. Otherwise, they will lose a
+             * token
+             */
             int answerNorth = scanner.nextInt();
             if (answerNorth == 1) {
                 System.out.println("Yes! That is correct! You have gained a token)");
@@ -203,15 +253,21 @@ public class Site {
                 System.out.println("You now have" + tokens + "token(s)");
             }
             System.out.println("");
-            // scanner.close();
         }
 
+        /**
+         * Create South option
+         */
         if (response.toLowerCase().equals("south")) {
 
             System.out.println("You are at Southern Niigata City!");
             System.out.println("");
             System.out.println("Do we have a Universal Studios in Japan? 1:Yes 2:No");
 
+            /**
+             * The player will get a token if they get correct. Otherwise, they will lose a
+             * token
+             */
             int answerSouth = scanner.nextInt();
             if (answerSouth == 1) {
                 System.out.println("Congrats!! You are right!! You gained a token");
@@ -223,11 +279,13 @@ public class Site {
                 System.out.println("you have" + tokens + "token(s)");
             }
             System.out.println("");
-            // scanner.close();
         }
 
     }
 
+    /**
+     * Create Kyoto method
+     */
     public void Kyoto() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("You have arrived at Kyoto!");
@@ -237,6 +295,9 @@ public class Site {
         String response = scanner.nextLine();
         System.out.println("You are going " + response);
 
+        /**
+         * Show the North option
+         */
         if (response.toLowerCase().equals("north"))
             ;
         {
@@ -249,10 +310,14 @@ public class Site {
             System.out.println("2. Being the longest existing building out of all the historical buildings in Kyoto");
             System.out.println("3. The temple does not have a single nail used in the entire structure");
             System.out.println("4. Being the oldest building built in Kyoto");
-
+            /**
+             * The player will get a token if they get correct. Otherwise, they will lose a
+             * token
+             */
             int answerNorth = scanner.nextInt();
             if (answerNorth == 1) {
-                System.out.println("Yes! The beautifully created golden exterior of Kinkakuji represents wealth, prosperity, and the pursuit of enlightenment.");
+                System.out.println(
+                        "Yes! The beautifully created golden exterior of Kinkakuji represents wealth, prosperity, and the pursuit of enlightenment.");
                 System.out.println("You gained a token");
                 tokens = tokens + 1;
                 System.out.println("You have" + tokens + "token(s)");
@@ -263,15 +328,21 @@ public class Site {
                 System.out.println("You have" + tokens + "token(s)");
             }
             System.out.println("");
-            // scanner.close();
         }
 
+        /**
+         * Show the south
+         */
         if (response.toLowerCase().equals("south")) {
 
             System.out.println("You are at Southern Osaka City!");
             System.out.println("");
             System.out.println("Do we have a Universal Studios in Japan? 1:Yes 2:No");
 
+            /**
+             * The player will get a token if they get correct. Otherwise, they will lose a
+             * token
+             */
             int answerSouth = scanner.nextInt();
             if (answerSouth == 1) {
                 System.out.println("Congrats!! You are right!!");
@@ -283,11 +354,13 @@ public class Site {
                 System.out.println("You now have" + tokens + "token(s)");
             }
             System.out.println("");
-            // scanner.close();
         }
 
     }
 
+    /**
+     * Create Saitama method 
+     */
     public void Saitama() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("You have arrived at Saitama!");
@@ -297,6 +370,9 @@ public class Site {
         String response = scanner.nextLine();
         System.out.println("You are going " + response);
 
+        /**
+         * Show North option 
+         */
         if (response.toLowerCase().equals("north"))
             ;
         {
@@ -323,6 +399,9 @@ public class Site {
             System.out.println("");
         }
 
+        /**
+         * Show the South option 
+         */
         if (response.toLowerCase().equals("south")) {
 
             System.out.println("You are at Saitama Children's Zoo!");
