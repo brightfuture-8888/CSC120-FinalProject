@@ -6,7 +6,7 @@
  - Design justification (including a brief discussion of at least one alternative you considered)
  - A map of your game's layout (if applicable)
  - `cheatsheet.md`
- - Completed `rubric.md`
+ - Completed `rubric.md` 
   
 ## Additional Reflection Questions
  - What was your **overall approach** to tackling this project?
