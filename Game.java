@@ -23,7 +23,6 @@ public class Game{
         boolean boardTrain = false;
 
         while (true){
-            System.out.println("What would you like to do? hint: open coin locker");
             String userInput = scanner.nextLine();
 
             if (userInput.toLowerCase().equals("open coin locker")){
